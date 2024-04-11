@@ -1,0 +1,259 @@
+/* body {
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+ */
+
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav img {
+    height: 10rem;
+    opacity: 0.7;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 30rem;
+}
+
+header nav ul li {
+    margin-right: 10rem;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero-section .hero {
+    background: none;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+}
+
+.hero .cta {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #f0f0f0;
+}
+
+body #header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#hero-section {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#hero-section * {
+    z-index: 10;
+}
+
+#hero-section .black-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000005d;
+}
+
+section.ques-con {
+    height: 100vh;
+    background-color: #0B1D26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mntn-mix {
+    height: 50vh;
+    position: relative;
+    top: -250px;
+    background: linear-gradient(rgba(255, 0, 0, 0), #0B1D26, #0B1D26);
+    z-index: 10;
+    margin-bottom: -250px;
+
+}
+
+.section-con {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+.section-con .section-con-son {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: relative;
+    height: 100%;
+}
+
+
+.section-con .section-con-son:nth-child(1) {
+    width: 60%;
+
+}
+
+.section-con .section-con-son:nth-child(2) {
+    overflow: hidden;
+    width: 40%;
+}
+
+.section-con .section-con-son:nth-child(2) img {
+    width: 100%;
+}
+
+.ques-num {
+    color: white;
+    font-size: 15rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.ques-data-con {
+    color: white;
+    margin: 10rem;
+}
+
+.ques-data-con h4 {
+    color: goldenrod;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.ques-data-con>a {
+    color: goldenrod;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.ques-data-con a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.ques-data-con h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.ques-data-con p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.section-con>.secondsec {
+    order: 1;
+}
+footer{
+    display: flex;
+    background-color: #0B1D26;
+}
+footer #foot-div-1{
+    margin-left: 11rem;
+    color: rgb(244, 243, 243);
+    width: 60%;
+    
+}
+
+footer div #first{
+    margin-bottom: 10rem;
+    color: rgb(244, 243, 243);
+}
+footer #foot-div-1 #last{
+    color: rgb(102, 93, 93);
+    
+}
+footer #foot-div-2{
+    
+    color: rgb(244, 243, 243);
+    width: 40%;
+    
+    display: flex;
+}
+.link-blog>h2{
+    color:gold;
+    margin-left: 2rem;
+}
+#foot-div-2 .link-blog a,ul{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.link-blog{
+    margin-left: 5rem;
+    font-size: large;
+    
+}
+
+

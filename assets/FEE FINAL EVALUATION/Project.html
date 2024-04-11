@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Image Gallery with Filters</title>
+  <style>
+   body {
+        background-image: url("backg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: relative;
+        height: 100%;
+        width: 100%;
+      }
+
+      .gallery h2 {
+        color: #FF5733; /* Sunset */
+      }
+
+      .gallery .ab h2 {
+        color: #D2B48C; /* Flowers */
+      }
+
+      .gallery .ac h2 {
+        color: #87CEEB; /* Mountains */
+      }
+
+      .gallery .ad h2 {
+        color: #008080; /* River */
+      }
+
+      .gallery .bb h2 {
+        color: #800080; /* Cat Duo */
+      }
+
+      .gallery .bc h2 {
+        color: #800080; /* Persian White Cat */
+      }
+
+      .gallery .bd h2 {
+        color: #FFA500; /* Orange cats */
+      }
+
+      .gallery .be h2 {
+        color: #0000FF; /* Blue Eyed Cat */
+      }
+
+      .gallery .cc h2 {
+        color: #008000; /* Ambasador */
+      }
+
+      .gallery .ca h2 {
+        color: #FFD700; /* Mercedes */
+      }
+
+      .gallery .cb h2 {
+        color: #990000; /* Aston martin */
+      }
+
+      .gallery .ce h2 {
+        color: #808080; /* Classic */
+      }
+    </style>
+    </head>
+  <body class="container-fluid">
+    <header style="background-color:aquamarine; text-align: center">
+      <h1
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          color: rgb(173, 65, 183);
+        ">
+    <div class="gallery">
+      <div class="filter">
+        <button class="btn" data-filter="all">Home</button>
+        <button class="btn" data-filter="nature">Nature</button>
+        <button class="btn" data-filter="cats">Cats</button>
+        <button class="btn" data-filter="cars">Cars</button>
+      </div>
+
+      <div class="images">
+        <div class="img nature">
+          <div class="aa"><img
+            src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+            alt="Nature Image 1"
+          /> <h2>Sunset</h2></div>
+            <div class="ab">
+          <img
+            src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg"
+            alt="Nature Image 2"
+          /> <h2>Flowers</h2></div>
+          <div class="ac">
+          <img
+            src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_640.jpg"
+            alt="Nature Image 3"
+          /> <h2>Mountains</h2></div>
+          <div class="ad">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg"
+            alt="Nature Image 4"
+          /> <h2>River</h2> </div>
+        </div>
+        <div class="img cats">
+          <div class="bb">
+          <img
+            src="https://i.pinimg.com/236x/7e/0a/50/7e0a507de8cf8b46e0f2665f1058ef37.jpg"
+            alt="Cat Image 1"
+          /><h2>Cat Duo</h2></div>
+          <div class="bc">
+          <img
+            src="https://i.pinimg.com/236x/32/67/d0/3267d073c0926695a3f672176e1a47a7.jpg"
+            alt="Cat Image 2"
+          /><h2>Persian White Cat</h2></div>
+          <div class="bd">
+          <img
+            src="https://i.pinimg.com/236x/43/a0/91/43a09124dd31bc36ea70c23d46546b23.jpg"
+            alt="Cat Image 3"
+          /><h2>Orange cats</h2></div>
+          <div class="be">
+          <img
+            src="https://i.pinimg.com/236x/f2/06/dc/f206dc98f8b853d3e157e8ac0b38b9a7.jpg"
+            alt="Cat Image 4"
+          /><h2>Blue Eyed Cat</h2> </div>
+        </div>
+        <div class="img cars">
+          <div class="cc">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_640.jpg"
+            alt="Car Image 1"
+          /><h2>Ambasador</h2></div>
+          <div class="ca">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_640.jpg"
+            alt="Car Image 2"
+          /><h2>Mercedes</h2></div>
+          <div class="cb">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/12/28/23/41/car-3046424_640.jpg"
+            alt="Car Image 3"
+          /><h2>Aston martin</h2></div>
+          <div class="ce">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/18/15/58/vw-1835506_640.jpg"
+            alt="Car Image 4"
+          /><h2>Classic</h2></div>
+        </div>
+    <script src="script.js"></script>
+    <script>
+      // JavaScript for making the website responsive
+      window.addEventListener('resize', adjustStyles);
+
+      function adjustStyles() {
+        const windowWidth = window.innerWidth;
+
+        // Example: Adjust font size of h2 based on window width
+        const h2Elements = document.querySelectorAll('.gallery h2');
+        h2Elements.forEach((h2) => {
+          if (windowWidth < 600) {
+            h2.style.fontSize = '16px';
+          } else {
+            h2.style.fontSize = '20px';
+          }
+        });
+      }
+
+      // Initial call to adjust styles on page load
+      adjustStyles();
+    </script>
+  </body>
+</html>
+  </body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Veer vanshaj</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="light-theme">
+
+  <!-- Start scroll-up-button -->
+  <div class="scroll-up-btn" onclick="scrollToTop()">
+    <img src="./assets/images/scroll-top-img.png" alt="scroll top icon" />
+  </div>
+  <!-- End scroll-up-button -->
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./assets/images/logo.png" alt="Devblog's logo" class="logo-light" />
+          <img src="./assets/images/logo.png" alt="Devblog's logo" class="logo-dark" />
+        </a>
+
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="flex-wrapper">
+          <ul class="desktop-nav">
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank"
+                class="nav-link">About Me</a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank"
+                class="nav-link">Contact</a>
+            </li>
+
+            
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+        </div>
+
+        <div class="mobile-nav">
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank"
+                  class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank"
+                  class="nav-link">Contact</a>
+              <li class="nav-item">
+                    <a href="" target="_blank"
+                      class="nav-link">document</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Softwar devloper</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+      <div class="container">
+
+        <div class="left">
+          <h1 class="h1">
+            Hi, I'm <b>Veer Vanshaj-Wadehra</b> <br />Web Developer
+          </h1>
+
+          <p class="h3">Learning Web Development.</p>
+
+          <div class="btn-group">
+            <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank"
+              class="btn btn-primary">Contact Me
+              <ion-icon name="call"></ion-icon>
+            </a>
+            <a href="https://drive.google.com/file/d/19fmwTmfZtgpz25nFfOHYoRgypj8eZ9Ze/view?usp=sharing" target="_blank"
+              class="btn btn-secondary">Download CV
+              <ion-icon name="cloud-download-sharp"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="https://th.bing.com/th/id/OIG2.effN633lz_Y6cez_MT0f?pid=ImgGn" alt="Julia Walker" class="hero-img" />
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <!-- Latest Projects -->
+
+          <h2 class="h2">Latest Projects</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/images/projects/dev-valley.png" alt="to do app" class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Projects</button>
+
+                <h3>
+                  <a href="./assets/MNTN/MNTN.html" class="h3" target="_blank">MNTN</a>
+                </h3>
+
+                <p class="blog-text">
+                  MNTN is an open-source community platform for Hiking,
+                  facilitating knowledge sharing and collaboration through blog posts and
+                  Question.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    <p class="text-sm">
+                      <time>March-2024</time>
+                      <span class="separator"></span>
+                                         
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/images/projects/home.png" alt="technologies book" width="250"
+                  class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Projects</button>
+
+                <h3>
+                  <a href="./assets/FEE FINAL EVALUATION/home page.html" class="h3" target="_blank">
+                    Collage web project team(Sem-1)
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  Teck Books is a website that provides free downloads of computer science,software engineering, and
+                  programming books, textbooks, lecture notes, and cheat sheets. All the resources on the site are
+                  freely available for users.
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                   </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    <p class="text-sm">
+                      <time>Dec-2023</time>
+                      <span class="separator"></span>
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/images/projects/movies-trailers.jpg" alt="movies-trailers" width="250"
+                  class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Projects</button>
+
+                <h3>
+                  <a href="/assets/FEE FINAL EVALUATION/login.html" class="h3" target="_blank">IMAGE GALLERY WITH FILTERS</a>
+                </h3>
+
+                <p class="blog-text">
+                  The IMAGE GALLERY WITH FILTERS is a group  project .This app provides an intuitive user interface where users 
+                  can browse and apply filters to see the image by thier prefrence of
+                  various movies.
+
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Mahmoud Elkariouny" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    <p class="text-sm">
+                      <time>Dec-2023</time>
+                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <!-- Problem Solving -->
+
+            <h2 class="h2" id="doc">Documents</h2>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="https://paytmblogcdn.paytm.com/wp-content/uploads/2024/02/Blog_Paytm_How-To-Get-Duplicate-Aadhar-Card.webp" alt="Adhar" width="250"
+                  class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Doc</button>
+
+                <h3>
+                  <a href="./assets/document/adhar card.PNG" class="h3" target="_blank">
+                    Aadhar card</a>
+                </h3>
+
+                
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Mahmoud Elkariouny" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/document/result arrow.jpeg" alt="JavaScript" width="250"
+                  class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Doc</button>
+
+                <h3>
+                  <a href="./assets/document/12th result.jpg" class="h3" target="_blank">12<sup>th</sup> Document
+                </h3>
+
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Mahmoud Elkariouny" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/document/result arrow.jpeg" alt="SQL" width="250" class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Doc</button>
+
+                <h3>
+                  <a href="./assets/document/10th result ...jpg" class="h3" target="_blank">
+                    10<sup>th</sup> document</a>
+                </h3>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Mahmoud Elkariouny" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--certifectes-->
+            <!--
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img src="./assets/images/projects/movies-trailers.jpg" alt="movies-trailers" width="250"
+                  class="blog-banner-img" />
+              </div>
+
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">Certificate </button>
+
+                <h3>
+                  <a href="/assets/FEE FINAL EVALUATION/login.html" class="h3" target="_blank">IMAGE GALLERY WITH FILTERS</a>
+                </h3>
+
+                <p class="blog-text">
+                  The IMAGE GALLERY WITH FILTERS is a group  project .This app provides an intuitive user interface where users 
+                  can browse and apply filters to see the image by thier prefrence of
+                  various movies.
+
+                </p>
+
+                <div class="wrapper-flex">
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Mahmoud Elkariouny" />
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Veer Vanshaj Wadehra</a>
+
+                    <p class="text-sm">
+                      <time>Dec-2023</time>
+                    
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+
+            <!-- Latest Blogs -->
+
+            
+
+
+          </div>
+
+          <button class="btn load-more">
+            <a href="#" target="_blank">Read More</a>
+          </button>
+        </div>
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside">
+          <div class="topics">
+            <h2 class="h2">Topics</h2>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="code-slash-sharp"></ion-icon>
+              </div>
+
+              <p>Software Development</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+
+              <p>Database</p>
+            </a>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <p>Web Performance</p>
+            </a>
+          </div>
+
+          <div class="tags">
+            <h2 class="h2">My Skills</h2>
+
+            <div class="wrapper">
+              <button class="hashtag">#HTML</button>
+              <button class="hashtag">#CSS</button>
+              <button class="hashtag">#JavaScript</button>
+              <button class="hashtag">#C</button>
+              <button class="hashtag">#Bootstrap</button>
+              <button class="hashtag">#Python</button>
+
+            </div>
+          </div>
+
+          <div class="contact">
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper">
+              <p>
+                Do you want to learn more about how I can help your
+                overcome problems? Let us have a conversation.
+              </p>
+
+              <ul class="social-link">
+
+
+                <li>
+                  <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" class="icon-box linkedin"
+                    target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="newsletter">
+            <h2 class="h2">Newsletter</h2>
+
+            <div class="wrapper">
+              <p>
+                Subscribe to our newsletter to be among the first to keep up
+                with the latest updates.
+              </p>
+
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required />
+
+                <button type="submit" class="btn btn-primary">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+
+      <div class="wrapper">
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="DevBlog's Logo" class="logo-light" />
+          <img src="./assets/images/logo.png" alt="DevBlog's Logo" class="logo-dark" />
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database
+          management.
+        </p>
+      </div>
+
+      <div class="wrapper">
+        <p class="footer-title">Contacts</p>
+
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" class="footer-link"
+              target="_blank">LinkdIn</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/veervanshaj" target="_blank" class="footer-link">GitHub</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/veer_vanshaj/" target="_blank" class="footer-link">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrapper">
+        <p class="footer-title">Qucik link to projects</p>
+
+        <ul>
+          <li>
+            <a href="./assets/MNTN/MNTN.html" target="_blank" class="footer-link">MNTN</a>
+          </li>
+
+          <li>
+            <a href="./assets/FEE FINAL EVALUATION/home page.html" target="_blank" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./assets/FEE FINAL EVALUATION/login.html" target="_blank" class="footer-link">IMAGE GALLERY WITH FILTERS</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2023
+      <a href="https://www.linkedin.com/in/veer-vanshaj-wadehra-251b7a2a7/" target="_blank">Code_Stark</a>
+    </p>
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
